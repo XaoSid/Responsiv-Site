@@ -1,0 +1,75 @@
+body{
+    height: 500px;
+
+}
+
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    height: 500px;
+    background-color: rgba(0,0,0,.7);
+
+    /*
+    flex-direction: row; //padrão
+    row/ column/ row-reverse/ column-reverse
+
+    flex-wrap: nowrap; -->padrão// permite quebra de linha
+    wrap/wrap-reverse/nowrap
+    
+    flex-flow: row wrap-reverse; // usada pra definir as duas propriedades acima de forma resumida
+
+    justify-content: flex-start; --> padrão// alinhamento horizontal
+    flex-start/ flex-end /center /space-between /space-around
+
+    align-items: stretch; --> padrão// alinhamento vertical
+    flex-start/ flex-end /center / baseline /stretch
+
+    align-content: stretch;
+    flex-start/ flex-end /center /space-between /space-around/ stretch
+    */
+}
+
+.quadrado01{
+    margin: 5px;
+    padding: 30px;
+    background-color: gray;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+
+    text-align: center;
+}
+
+/*02*/
+
+.container{
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: center;
+    height: 500px;
+    background-color: rgba(0,0,0,.7);
+
+}
+
+.item{
+    margin: 5px;
+    padding: 30px;
+    background-color: gray;
+    color: #fff;
+    height: 50px;
+
+    flex-grow: 1;/*capacidade maxima de aumentação???*/
+    flex-basis: 20px;
+    flex-shrink: 1;/*capacidade minima de redução*/
+    flex: 1 1 30px;/*forma resumida de tudo acima*/
+    align-self: flex-end;/*alinhar um item dentro do container*/
+}
+
+#vai{
+    width: 1170;
+    height: 1170;
+    background-color: gray;
+}
